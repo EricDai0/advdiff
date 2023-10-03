@@ -45,8 +45,8 @@ random.seed(0)
 
 model = get_model()
 vic_model = resnet50(weights=ResNet50_Weights.IMAGENET1K_V2).to(model.device)
-sampler = DDIMSampler(model, vic_model=vic_model)
 vic_model.eval()
+sampler = DDIMSampler(model, vic_model=vic_model)
 
 import numpy as np 
 from PIL import Image
