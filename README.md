@@ -4,7 +4,7 @@ The code repository for our paper AdvDiff: Generating Unrestricted Adversarial E
 
 # Installation
 
-This repository is based on the offical code from [Latent Diffusion Models](https://github.com/CompVis/latent-diffusion). 
+This repository is based on the official code from [Latent Diffusion Models](https://github.com/CompVis/latent-diffusion). 
 
 1. Set up environments for the codes. Details please refer to the original Github code.
 
