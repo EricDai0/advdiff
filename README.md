@@ -12,12 +12,14 @@ This repository is based on the offical code from [Latent Diffusion Models](http
    conda env create -f environment.yaml
    conda activate ldm_adv
    ```
-2. Download ImageNet checkpoint and save to "models/ldm/cin256-v2/model.ckpt"
+2. Download ImageNet checkpoint [LDM] (https://ommer-lab.com/files/latent-diffusion/nitro/cin/model.ckpt) and save to "models/ldm/cin256-v2/model.ckpt"
 
 # Usage
 
-Currently, a simple reference code can be used with advdiff.py. Please refer to the ddim_adv.py for possible code transfer. A complete code will be implemented soon.
-
+Simply run advdiff.py to perform attacks against the official PyTorch ResNet50 model. You can modify the attack parameter at the advdiff.py.
+```
+python advdiff.py 
+```
 
 # Reference
 
