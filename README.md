@@ -12,7 +12,7 @@ This repository is based on the offical code from [Latent Diffusion Models](http
    conda env create -f environment.yaml
    conda activate ldm_adv
    ```
-2. Download ImageNet checkpoint [LDM] (https://ommer-lab.com/files/latent-diffusion/nitro/cin/model.ckpt) and save to "models/ldm/cin256-v2/model.ckpt"
+2. Download ImageNet checkpoint (https://ommer-lab.com/files/latent-diffusion/nitro/cin/model.ckpt) and save to "models/ldm/cin256-v2/model.ckpt"
 
 # Usage
 
