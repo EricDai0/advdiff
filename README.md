@@ -1,4 +1,4 @@
-# AdvDiff
+# AdvDiff ECCV 2024
  
 The code repository for our paper AdvDiff: Generating Unrestricted Adversarial Examples using Diffusion Models [arXiv](https://arxiv.org/abs/2307.12499)
 
