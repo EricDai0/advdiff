@@ -12,8 +12,14 @@ import torch.nn.functional as F
 
 from torchvision.utils import save_image, make_grid
 
-weights = ResNet50_Weights.DEFAULT
-preprocess = weights.transforms()
+#weights = ResNet50_Weights.DEFAULT
+#preprocess = weights.transforms()
+
+preprocess = T.Compose([
+    T.Resize((256,256)),
+    T.CenterCrop((224,224)),
+    T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+])
 
 def get_target_label(logits, label, device): # seond-like label for attack
     
