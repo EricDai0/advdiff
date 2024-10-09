@@ -108,13 +108,8 @@ def main():
                 all_samples.append(x_samples_ddim)
                 all_labels.append(xc)
 
-    # display as grid
-    grid = torch.stack(all_samples, 0)
-    labels = torch.stack(all_labels, 0)
-
-    img = torch.flatten(grid, start_dim=0, end_dim=1)
-    labels = torch.flatten(labels, start_dim=0, end_dim=1)
-
+    img = torch.cat(all_samples, 0)
+    labels = torch.cat(all_labels, 0)
 
     save_img = img.permute(0,2,3,1)
 
